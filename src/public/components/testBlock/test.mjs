@@ -1,4 +1,4 @@
-export class Footer {
+export class Test {
   #parent;
 
   constructor(parent, config) {
@@ -13,9 +13,8 @@ export class Footer {
 
   renderTemplate() {
     // Чтобы это работало, нужно импортировать handlebars.runtime.js
-    console.log("footer");
-    console.log(window.location.pathname);
-    const template = Handlebars.templates["footer.hbs"];
+    console.log("test");
+    const template = Handlebars.templates["test.hbs"];
     console.log(template);
     this.#parent.innerHTML = template();
   }

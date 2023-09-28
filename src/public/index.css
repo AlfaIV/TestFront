@@ -1,3 +1,4 @@
+@import "./components/nowWatch/nowWatch.css";
 @import "./components/footer/footer.css";
 @import "./components/contentBlock/contentBlock.css";
 
@@ -5,7 +6,4 @@ body {
   background-color: #ebebe7;
   display: flex;
   justify-content: center;
-}
-#contentBlock > p {
-  height: 2000px;
 }

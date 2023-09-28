@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm run compile:templates",
+    "prestart": "npm run compile:footer && npm run compile:nowWatch && npm run compile:test",
     "start": "node server/index.js",
-    "compile:templates": "handlebars public/components/footer/footer.hbs -f public/components/footer/footer.precompiled.js",
+    "compile:footer": "handlebars public/components/footer/footer.hbs -f public/components/footer/footer.precompiled.js",
+    "compile:nowWatch": "handlebars public/components/nowWatch/nowWatch.hbs -f public/components/nowWatch/nowWatch.precompiled.js",
+    "compile:test": "handlebars public/components/testBlock/test.hbs -f public/components/testBlock/test.precompiled.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "handlebars": "^4.7.8"
   }
 }

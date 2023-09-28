@@ -1,9 +1,8 @@
-export class Footer {
+export class nowWatch {
   #parent;
 
   constructor(parent, config) {
     this.#parent = parent;
-
     // Инициализация состояния компонента
     this.state = {
       activeMenu: null,
@@ -13,10 +12,16 @@ export class Footer {
 
   renderTemplate() {
     // Чтобы это работало, нужно импортировать handlebars.runtime.js
-    console.log("footer");
+    console.log("nowWatch");
     console.log(window.location.pathname);
-    const template = Handlebars.templates["footer.hbs"];
+    console.log(window.location.href);
+    console.log(typeof Handlebars);
+    console.log(Handlebars);
+    const template = Handlebars.template["nowWatch.hbs"];
     console.log(template);
-    this.#parent.innerHTML = template();
+    console.log(typeof template);
+    console.log("321");
+    // this.#parent.innerHTML = template();
+    console.log("happy");
   }
 }
