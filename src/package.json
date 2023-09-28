@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm run compile:footer && npm run compile:nowWatch && npm run compile:test",
+    "prestart": "npm run compile:footer && npm run compile:watch",
     "start": "node server/index.js",
     "compile:footer": "handlebars public/components/footer/footer.hbs -f public/components/footer/footer.precompiled.js",
-    "compile:nowWatch": "handlebars public/components/nowWatch/nowWatch.hbs -f public/components/nowWatch/nowWatch.precompiled.js",
-    "compile:test": "handlebars public/components/testBlock/test.hbs -f public/components/testBlock/test.precompiled.js",
+    "compile:watch": "handlebars public/components/watch/watch.hbs -f public/components/watch/watch.precompiled.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
